@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  金卡管家
+//
+//  Created by Scott on 2016/11/3.
+//  Copyright © 2016年 Scott. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define WIDTHSIZE(i)    ceil(((([UIScreen mainScreen].bounds).size.width*2) / 750) * i)
+#define HEIGHTSIZE(i)    ceil(((([UIScreen mainScreen].bounds).size.height*2) / 1334) * i)
+#define baseUrl(url)  [NSString stringWithFormat:@"http://moto-test.piaggioclub.cn%@",url]
+
+#import "GeneralTool.h"
+#import "AFNetworking.h"
+#import "SDImageCache.h"
+#import "SDWebImageManager.h"
+
+#endif /* PrefixHeader_pch */
